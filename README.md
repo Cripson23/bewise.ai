@@ -33,15 +33,14 @@ exit
 ```
 ## API Info
 ### Request URL: http://127.0.0.1:8000/questions [Method: POST]
-### JSON Params: questions_num (required) [type: integer; min value = 1; max_value = 100]
-### Example
-JSON data example:
+### JSON Params: questions_num (required) [type: integer; min_value: 1; max_value: 100]
+### JSON data example:
 ```
 {
     "questions_num": 100
 }
 ```
-Response data example:
+### Response data example:
 ```
 {
     "answer": "mistletoe",
