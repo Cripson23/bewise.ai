@@ -11,7 +11,7 @@ docker-compose build
 ```
 docker-compose up -d
 ```
-## Execute only after the first launch of containers
+## Flask-Migrate init (execute only after the first launch of containers)
 ### Go to the command line for the flask-app container
 ```
 docker exec -it flask-app bash
