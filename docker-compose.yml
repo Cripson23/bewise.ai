@@ -1,0 +1,29 @@
+version: "3"
+services:
+  web:
+    build: ./flask-app
+    container_name: flask-app
+    ports:
+      - "8000:5000"
+    depends_on:
+      - postgres
+    environment:
+      SQLALCHEMY_DATABASE_URI: postgresql://pguser:pguserpgdb@postgres:5432/pgdb
+    volumes:
+      - ./flask-app:/flask-app
+    restart: always
+
+  postgres:
+    image: postgres:13.6
+    container_name: postgres
+    environment:
+      POSTGRES_DB: "pgdb"
+      POSTGRES_USER: "pguser"
+      POSTGRES_PASSWORD: "pguserpgdb"
+      PGDATA: "/var/lib/postgresql/data/pgdata"
+      POSTGRES_INITDB_ARGS: "-A md5"
+    volumes:
+      - .:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    restart: always
