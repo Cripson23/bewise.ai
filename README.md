@@ -33,8 +33,8 @@ flask db upgrade
 exit
 ```
 # API Info
-## Receiving questions and saving them in the database.
-## Request URL: http://127.0.0.1:8000/questions [Method: POST]
+## 1. Receiving questions and saving them in the database.
+### Request URL: http://127.0.0.1:8000/questions [Method: POST]
 ### JSON Params: questions_num (required) [type: integer; min_value: 1; max_value: 100]
 ### JSON data example:
 ```
