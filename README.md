@@ -1,5 +1,4 @@
-# Test task bewise.ai
-# Instructions for setting up and launching
+# Test task bewise.ai | Instructions for setting up and launching
 ## Сlone the git repository and change to the project directory
 ```
 git clone https://github.com/Cripson23/bewise.ai.git & cd bewise.ai
