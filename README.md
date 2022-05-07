@@ -1,4 +1,4 @@
-# Test task bewise.ai | Instructions for setting up and launching
+# Instructions for setting up and launching
 ## Сlone the git repository and change to the project directory
 ```
 git clone https://github.com/Cripson23/bewise.ai.git & cd bewise.ai
@@ -31,7 +31,7 @@ flask db upgrade
 ```
 exit
 ```
-## API Info
+# API Info
 ### Request URL: http://127.0.0.1:8000/questions [Method: POST]
 ### JSON Params: questions_num (required) [type: integer; min_value: 1; max_value: 100]
 ### JSON data example:
