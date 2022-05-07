@@ -28,6 +28,7 @@ flask db migrate -m "Initial migration."
 ```
 flask db upgrade
 ```
+### Flask-app container command line exit
 ```
 exit
 ```
